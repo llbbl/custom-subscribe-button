@@ -32,46 +32,83 @@
     border: medium none;
 }
 
+button,input{
+	line-height:normal
+}
 
-button.large{
-    min-height: 27px;
-    padding-left: 38px;
+.button,button{
+	cursor:pointer;
+	user-select:none;
+	background-clip:padding-box
+}
+
+.button::selection,button::selection{
+	background:0 0
+}
+
+.button::-moz-selection,button::-moz-selection{
+	background:0 0
+}
+
+.button button.black.large {
+    background-position: 0px -355px;
+}
+.button button.black {
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+}
+.button button.large {
     padding-right: 4px;
     padding-top: 0px;
     font-size: 13px;
-
-
+    padding-left: 38px;
+    min-height: 27px;
+}
+.mac .button button {
+    font-weight: 500 !important;
+}
+.button button {
     cursor: pointer;
     position: relative;
     padding: 0px;
     color: #FFF;
-    background-image: url("../img/button.png?v=7");
-    background-position: 0px -355px;
+    background-image: url("../img/button.png");
     overflow: visible;
     outline: 0px none;
     border: medium none;
 }
-a#button {
-    height: 27px;
-    width: 158px;
-    font-family: Arial, sans-serif;
-    display: inline-block;
-    background: #333;
-    border: none;
-    color: #fff;
-    font-size: 13px;
-    padding: 0;
-    cursor: pointer;
-    margin-top: 0;
-    text-decoration: none;
-    -khtml-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+.button button, .button button .cap {
+    background-color: transparent;
+    background-repeat: no-repeat;
 }
 
+.button button.large .text {
+    display: inline-block;
+    padding-bottom: 2px;
+}
+.button button .text {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
 
-
+.button button.black.large .cap {
+    background-position: 100% -355px;
+}
+.button button .cap {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -6px;
+    width: 7px;
+    height: 100%;
+    z-index: 100;
+    background-image: url("../img/button.png");
+}
+.button button, .button button .cap {
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
 
 
 
