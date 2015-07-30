@@ -1,10 +1,9 @@
 Custom Subscribe Button
 =======================
 
-This is a quick demo of how to use basic HTML, CSS and Javascript to create your own custom [Subscribe Button](http://www.campaignmonitor.com/blog/post/3936/say-hello-to-the-subscribe-button) that'll enable visitors to join your Campaign Monitor list.
-
-[View a demo](http://www.buzzusborne.com/button)
-
+This is a quick demo of how to use basic HTML, CSS and Javascript to create your own custom
+[Subscribe Button](http://www.campaignmonitor.com/blog/post/3936/say-hello-to-the-subscribe-button)
+that'll enable visitors to join your Campaign Monitor list.
 
 
 ----
@@ -25,9 +24,8 @@ There are also a few assets you need to include on your page to get this working
 
 
 ### Make it your own
-There is very little CSS required to make the modal window open correctly, you'll find what you need in `css/basic.css`. The rest of the modal and button styling is up to you... keep it basic, or make it look something like `fancy.html`
-
-![A styled subscribe modal](http://newcampaignmon.cachefly.net/uploads/images/example_modal.png "A styled subscribe modal")
+There is very little CSS required to make the modal window open correctly, you'll find what you need in `css/basic.css`. The rest of the modal and button
+styling is up to you... keep it basic, or make it look something like `fancy.html`
 
 
 Credits
