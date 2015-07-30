@@ -110,9 +110,64 @@ button,input{
     background-repeat: no-repeat;
 }
 
-
+/*
+Normal Sized Modal
+*/
 
 .modal {
+    text-align: left;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+    width: 339px;
+    margin: -17% 0 0 -250px;
+    background-color: #FFF;
+    z-index: 1000;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+    -moz-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+    -webkit-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
+    padding: 18px 26px 23px;
+}
+
+.modal h1 {
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    color: #373c44;
+    margin-left: -2px;
+    margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 1.3px;
+}
+.modal h2 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #9099A3;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    width: 100%;
+    border-bottom: 1px solid #ECEEF1;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.modal form#subForm input {
+    width: 285px;
+    border: 1px solid #cfd4db;
+    padding: 10px;
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    color: #373c44;
+}
+
+/*
+Large Sized Modal
+*/
+.modal-lg {
     text-align: left;
     position: fixed;
     top: 50%;
@@ -131,6 +186,41 @@ button,input{
     -webkit-box-shadow: 0 0 0 4px rgba(55, 60, 65, 0.1);
     padding: 50px 50px 55px;
 }
+
+
+.modal-lg h1 {
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    color: #373c44;
+    margin-left: -2px;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+.modal-lg h2 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #9099A3;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    width: 100%;
+    border-bottom: 1px solid #ECEEF1;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.modal-lg form#subForm input {
+    width: 378px;
+    border: 1px solid #cfd4db;
+    padding: 10px;
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    color: #373c44;
+}
+
+/*
+Global Modal Styles
+*/
+
 .modal a.close {
     position: absolute;
     top: 15px;
@@ -142,30 +232,7 @@ button,input{
 .modal a.close:hover {
     color: #5d6670;
 }
-.modal h1,
-.modal h2 {
-    margin: 0;
-    padding: 0;
-}
-.modal h1 {
-    font-family: 'Droid Serif', serif;
-    font-weight: 700;
-    color: #373c44;
-    margin-left: -2px;
-    margin-bottom: 10px;
-    font-size: 35px;
-}
-.modal h2 {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #9099A3;
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-weight: normal;
-    width: 100%;
-    border-bottom: 1px solid #ECEEF1;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-}
+
 .modal #response {
     float: left;
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -183,16 +250,8 @@ button,input{
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    margin: 0;
 }
-.modal form#subForm input {
-    width: 378px;
-    border: 1px solid #cfd4db;
-    padding: 12px 10px;
-    margin: 0 0 5px 0;
-    font-size: 15px;
-    color: #373c44;
-}
+
 .modal form#subForm input::-webkit-input-placeholder {
     color: #c8ccd1;
 }
