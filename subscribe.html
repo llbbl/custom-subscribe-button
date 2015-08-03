@@ -14,7 +14,7 @@
 
 
 
-<div data-toggle="modal" data-target="#modal" class="button" style="display: inline-block">
+<div data-toggle="modal" data-target="#modal" id="cm-button" class="cm-button" style="display: inline-block">
     <button class="large black">
         <span class="text">
             Enter the drawing!
@@ -27,7 +27,7 @@
 	<div id="modal" class="modal hide">
 		<form action="http://delivery.prevue.it/t/r/s/jdditkj/" method="post" id="subForm">
 			<a class="close" href="javascript://" data-dismiss="modal">&#215;</a>
-			<h1>Sign up for our newsletter</h1>
+			<h1 id="subFormHeader">Sign up for our newsletter</h1>
 			<input type="text" name="cm-name" placeholder="Your name" />
 			<input type="email" spellcheck="false" name="cm-jdditkj-jdditkj" id="email" placeholder="Your email address" />
 			<button type="submit" value="Subscribe">Submit entry</button>
@@ -47,12 +47,12 @@
 			$('#subForm').submit(function (e) {
 				e.preventDefault();
 				$('#email').removeClass();
-				$('button').fadeTo(200,0.5);
+				$('.cm-button').fadeTo(200,0.5);
 				$.getJSON(
 				this.action + "?callback=?",
 				$(this).serialize(),
 				function (data) {
-					$('button').stop().fadeTo(200,1);
+					$('.cm-button').stop().fadeTo(200,1);
 					if (data.Status === 400) { $('#email').addClass('error'); } else { $('#response').show(); }
 				});
 			});

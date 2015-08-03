@@ -19,7 +19,7 @@
     filter: alpha(opacity=40);
 }
 
-.button button
+.cm-button button
 {
     cursor: pointer;
     position: relative;
@@ -33,40 +33,40 @@
 }
 
 button,input{
-	line-height:normal
+	line-height:normal;
 }
 
-.button,button{
+.cm-button,button{
 	cursor:pointer;
 	user-select:none;
-	background-clip:padding-box
+	background-clip:padding-box;
 }
 
-.button::selection,button::selection{
-	background:0 0
+.cm-button::selection,button::selection{
+	background:0 0;
 }
 
-.button::-moz-selection,button::-moz-selection{
-	background:0 0
+.cm-button::-moz-selection,button::-moz-selection{
+	background:0 0;
 }
 
-.button button.black.large {
+.cm-button button.black.large {
     background-position: 0px -355px;
 }
-.button button.black {
+.cm-button button.black {
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
 }
-.button button.large {
+.cm-button button.large {
     padding-right: 4px;
     padding-top: 0px;
     font-size: 13px;
     padding-left: 38px;
     min-height: 27px;
 }
-.mac .button button {
+.mac .cm-button button {
     font-weight: 500 !important;
 }
-.button button {
+.cm-button button {
     cursor: pointer;
     position: relative;
     padding: 0px;
@@ -76,25 +76,35 @@ button,input{
     outline: 0px none;
     border: medium none;
 }
-.button button, .button button .cap {
+.cm-button button, .cm-button button .cap {
     background-color: transparent;
     background-repeat: no-repeat;
 }
 
-.button button.large .text {
+.cm-button button:hover, .cm-button button:hover .cap:hover {
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+#cm-button button:hover, #cm-button button:hover .cap:hover {
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.cm-button button.large .text {
     display: inline-block;
     padding-bottom: 2px;
 }
-.button button .text {
+.cm-button button .text {
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
 }
 
-.button button.black.large .cap {
+.cm-button button.black.large .cap {
     background-position: 100% -355px;
 }
-.button button .cap {
+.cm-button button .cap {
     content: "";
     display: block;
     position: absolute;
@@ -105,10 +115,7 @@ button,input{
     z-index: 100;
     background-image: url("../img/button.png");
 }
-.button button, .button button .cap {
-    background-color: transparent;
-    background-repeat: no-repeat;
-}
+
 
 /*
 Normal Sized Modal
@@ -119,7 +126,6 @@ Normal Sized Modal
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 200;
     width: 339px;
     margin: -17% 0 0 -250px;
     background-color: #FFF;
@@ -134,7 +140,7 @@ Normal Sized Modal
     padding: 18px 26px 23px;
 }
 
-.modal h1 {
+#subForm h1 {
     font-family: 'Droid Serif', serif;
     font-weight: 700;
     color: #373c44;
@@ -143,7 +149,8 @@ Normal Sized Modal
     font-size: 18px;
     line-height: 1.3px;
 }
-.modal h2 {
+
+#subForm h2 {
     font-size: 14px;
     line-height: 1.5;
     color: #9099A3;
